@@ -1,0 +1,49 @@
+/* Default styles (desktop first) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.quote-box {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .quote-box {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .quote-box {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    blockquote {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
